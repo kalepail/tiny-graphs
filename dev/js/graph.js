@@ -23,7 +23,7 @@ $.fn.tinyGraph = function(data) {
 
   ////
   // Interval range
-  $('.range-picker .interval').html('['+ interval +']');
+  $('.range-picker .interval').html('{interval: '+ interval +'}');
   ////
 
 
