@@ -1,0 +1,128 @@
+.graph {
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+}
+.graph.dark {
+  background-color: $black;
+  color: $white;
+}
+
+////
+// Light theme
+svg {
+  text {
+    fill: $black;
+  }
+  .axis {
+    fill: none;
+    shape-rendering: crispEdges;
+    
+    path, line {
+      fill: none;
+      stroke: none;
+    }
+    &.axis--y line, &.axis--x line {
+      stroke: rgba($black, 0.1);
+    }
+    &.axis--x text {
+      text-anchor: end !important;
+    }
+  }
+  .mask-line, .circle {
+    stroke: $white;
+  }
+  .scrubber {
+    shape-rendering: crispEdges;
+    stroke: rgba($black, 0.1);
+  }
+
+  ////
+  // Group colors
+  .group-0 {
+    color: $red;
+
+    .area {
+      fill: rgba($red, 0.3);
+    }
+    .color-line {
+      stroke: currentColor;
+    }
+    .circle {
+      fill: currentColor;
+    }
+  }
+  .group-1 {
+    color: $green;
+
+    .area {
+      fill: rgba($green, 0.3);
+    }
+    .color-line {
+      stroke: currentColor;
+    }
+    .circle {
+      fill: currentColor;
+    }
+  }
+  .group-2 {
+    color: $purple;
+
+    .area {
+      fill: rgba($purple, 0.3);
+    }
+    .color-line {
+      stroke: currentColor;
+    }
+    .circle {
+      fill: currentColor;
+    }
+  }
+  .group-3 {
+    color: $yellow;
+
+    .area {
+      fill: rgba($yellow, 0.3);
+    }
+    .color-line {
+      stroke: currentColor;
+    }
+    .circle {
+      fill: currentColor;
+    }
+  }
+  .group-4 {
+    color: $brown;
+
+    .area {
+      fill: rgba($brown, 0.3);
+    }
+    .color-line {
+      stroke: currentColor;
+    }
+    .circle {
+      fill: currentColor;
+    }
+  }
+  ////
+}
+////
+
+
+////
+// Dark theme
+.graph.dark svg {
+  text {
+    fill: $brown;
+  }
+  .axis--y line, .axis--x line {
+    stroke: rgba($brown, 0.1);
+  }
+  .mask-line, .circle {
+    stroke: $black;
+  }
+  .scrubber {
+    stroke: rgba($brown, 0.3);
+  }
+}
+////
