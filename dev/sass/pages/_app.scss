@@ -1,0 +1,38 @@
+html, body {
+  // width: 100%;
+  // height: 100%;
+}
+
+body {
+  font-family: "San Francisco Display";
+  background-color: $mite;
+  color: $black;
+}
+
+// Graph styles
+.main-graph {
+  height: 100%;
+  width: calc(100% - 4em);
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+svg {
+  rect, line {
+    shape-rendering: crispEdges;
+  }
+  rect {
+    fill: $salmon;
+    stroke: $mite;
+  }
+  text {
+    fill: $rabbit;
+  }
+  line {
+    stroke: $rat;
+  }
+  .tick text {
+    font-size: 12px;
+    position: relative;
+  }
+}

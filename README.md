@@ -1,1 +1,1 @@
-## Stacking Bar Chart
+## Vertical Bar Chart
