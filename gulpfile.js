@@ -10,7 +10,6 @@ var gulp = require('gulp'),
     cmq = require('gulp-combine-media-queries');
 
 
-
 // ROOT TASKS // ---------------------------------------------------------
 // Main style task  
 gulp.task('css', function() {
@@ -46,7 +45,6 @@ gulp.task('img', function() {
     }))
     .pipe(gulp.dest('public/img'));
 });
-
 
 
 // FUNCTIONS // ---------------------------------------------------------
